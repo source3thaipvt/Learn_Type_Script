@@ -1,0 +1,4 @@
+Cài đặt format code: Prettier
+
+tao forlder: .vscode
+tao file: .prettierrc
