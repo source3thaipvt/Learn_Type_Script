@@ -5,7 +5,7 @@ export {};
 
 import { send } from './mailer';
 
-console.log('Lab7 Optional Properties');
+console.log('Lab8 Optional Properties');
 // interface
 interface Contact {
   name: string;
