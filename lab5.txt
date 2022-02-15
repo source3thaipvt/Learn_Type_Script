@@ -1,0 +1,10 @@
+Cau hinh commpile voi tsconfig.json
+
+{
+  "compilerOptions": {
+    "target": "ES2020",     // Muc tieu, version cao giup build file.js code sach hon
+    "outDir": "build",      // build ra thu muc build
+    "module": "CommonJS"    // Giup build ra ca file import< neu build rieng> node build/index.js
+  },
+  "include": ["src/**/*"]   // commpile all trong thu muc src
+}

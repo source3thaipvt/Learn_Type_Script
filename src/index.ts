@@ -3,3 +3,4 @@ function sum(...nums) {
 }
 const a = sum(5, 9, 3, 45, 2);
 console.log(a);
+

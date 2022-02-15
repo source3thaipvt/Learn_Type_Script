@@ -1,2 +1,5 @@
 npm i ts-node-dev --save-dev
 npm i typescript --save-dev
+
+npm run dev
+npm run build
