@@ -1,4 +1,5 @@
 // Cac kieu gan trong typeScripts
+export {};
 
 const age: number = 1;
 
