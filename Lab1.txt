@@ -1,0 +1,7 @@
+Tại sao nên học typeScript
+-Code chặt chẽ hơn
+-Code nhanh hơn khi dự án lớn
+-Code suggestion
+-Khi làm dự án lớn, ko biết type đầu ra, vào các function/ object
+dễ gây nhầm lẫn, gây lỗi ko đáng có
+
