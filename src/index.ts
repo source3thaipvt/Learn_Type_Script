@@ -5,6 +5,8 @@ import * as Lab8 from './lab8_optional_properties';
 import * as Lab9 from './lab9_optional_chaining';
 import * as Lab10 from './lab10_extend_interface';
 import * as Lab11 from './lab11_implement_interface';
+import * as Lab12 from './lab12_interface_declaration_merging';
+
 function sum(...nums) {
   return nums.reduce((a, b) => a + b);
 }
@@ -18,3 +20,4 @@ Lab8;
 Lab9;
 Lab10;
 Lab11;
+Lab12;

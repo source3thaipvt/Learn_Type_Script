@@ -1,5 +1,5 @@
 export {};
-// Implement Interface
+// Declaration merging Interface // Khai bao hop nhat interface
 
 interface Pet {
   name: string;
@@ -14,6 +14,11 @@ interface Contact {
   pet?: Pet;
   addresses?: Address[];
 }
+//Khai bao cung ten interface contact, tu merging interface
+interface Contact {
+  isDeleted: boolean;
+}
+
 // khoi tao kho chua Contact, array
 const contact: Contact[] = [];
 
@@ -25,6 +30,7 @@ const newContact: Contact = {
   pet: {
     name: 'A',
   },
+  isDeleted: false,
 };
 // push data
 contact.push(newContact);
@@ -32,6 +38,7 @@ contact.push(newContact);
 const otherContact: Contact = {
   name: 'Nguyen Van B',
   phone: '0322324143',
+  isDeleted: false,
 };
 function getPetName(contact: Contact): string {
   return contact.pet?.name || 'Null';
@@ -70,6 +77,7 @@ const addToCartBtn: IconButton = {
 class MyContact implements Contact {
   name: string;
   phone: string;
+  isDeleted: false;
   constructor(name: string, phone: string) {
     this.name = name;
     this.phone = phone;
@@ -98,8 +106,8 @@ class MyContactAdapter implements ContactAdapter {
   async getData() {
     // get data from API
     const contacts: Contact[] = [
-      { name: 'A', phone: '123' },
-      { name: 'B', phone: '456' },
+      { name: 'A', phone: '123', isDeleted: false },
+      { name: 'B', phone: '456', isDeleted: false },
     ];
     return contacts;
   }
