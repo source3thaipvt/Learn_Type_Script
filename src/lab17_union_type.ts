@@ -174,3 +174,19 @@ doAfter(1000, (value) => {
   // no biet value 1 kieu boolean
   console.log(value);
 });
+
+function isWeekend(date: Date | string | number): boolean {
+  // chuyen doi typeOf string sang type Date
+  if (
+    typeof date === 'string' ||
+    typeof date === 'number'
+  ) {
+    date = new Date(date);
+  }
+  const day = date.getDay();
+  return day === 6 || day === 0;
+  // 0 = Sunday || 6 = Saturday
+}
+console.log(isWeekend(new Date()), 'lab 18'); // false lab18
+console.log(isWeekend('2011-10-15T14:48:00.000Z'), 'Lab23');
+console.log(isWeekend(new Date().getTime()), 'Lab23');

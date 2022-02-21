@@ -8,6 +8,10 @@ import * as Lab11 from './lab11_implement_interface';
 import * as Lab12 from './lab12_interface_declaration_merging';
 import * as Lab13 from './lab13_type_inference';
 import * as Lab14 from './lab14_contextual_typing';
+import * as Lab15 from './lab15_duck_typing';
+import * as Lab16 from './lab16_enum';
+import * as Lab17 from './lab17_union_type';
+import * as Lab18 from './lab14_contextual_typing';
 
 function sum(...nums) {
   return nums.reduce((a, b) => a + b);
@@ -25,3 +29,6 @@ Lab11;
 Lab12;
 Lab13;
 Lab14;
+Lab15;
+Lab16;
+Lab17;
